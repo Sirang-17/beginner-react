@@ -1,18 +1,14 @@
 import React from 'react'
 
 const Items = () => {
-  const age = 20;
+  const adhaar = true;
+  const gmail = false;
+
   return (
-    <div>
-      {age >= 18 ? (
-        <><h2>You are an adult</h2>
-        </>
-      ) : (
-        <>
-          <h2>You are not an adult</h2>
-        </>
-      )}
-    </div>
+    <>
+    {adhaar && <p>You can open bank account.</p>}
+    {gmail && <p>You can create YouTube channel.</p>}
+    </>
   )
 }
 
