@@ -8,8 +8,11 @@ const App = () => {
   };
   return (
     <>
+     <Product />
      <Product name = "IPhone" price = {100000} color={"Blue"} data = {iphoneData} />
-      <Product name = "Samsung" price = {80000} color={"Black"} data = {{ram: "8GB", rom: "128GB", chip: "Exynos 2100"}} />
+      <Product name = "Samsung" price = {80000} color={"Black"} data = {{ram: "8GB", rom: "128GB", chip: "Exynos 2100"}} 
+      />
+      <Product name = "OnePlus" price = {50000} color={"Red"} />
     </>
   )
 }
