@@ -1,27 +1,17 @@
 import React from 'react'
-
+import Product from './components/Product';
+import Items from './components/Items';
 const App = () => {
-  const num = 10;
-  const person = {
-    name: "Ali",
-    gmail: "ali12@gmail.com",
+  const iphoneData = {
+    ram: "16GB",
+    rom: "256GB",
+    chip: "A15 Bionic"
   };
   return (
     <>
-     <div>
-      <h1>Hello React</h1>
-      <h1>Welcome to React!</h1>
-      <h1>2 + 5</h1>
-      <h1>{2 + 5}</h1> JSX means JavaScript XML, so we can write JavaScript 
-      code inside the curly  braces
-      <h1>{2 - 5}</h1>
-      <h1>{2 * 5}</h1>
-      <h2>{num}</h2>
-      <h2>{person.name}</h2>
-      <h2>{person.gmail}</h2>
-     </div>
-     <h1>Hi</h1>
-     <div><h1>world</h1></div>
+     {/* <Product name = "IPhone" price = {100000} color={"Blue"} data = {iphoneData} />
+     <Product name = "Samsung" price = {80000} color={"Black"} data = {{ram: "8GB", rom: "128GB", chip: "Exynos 2100"}} /> */}
+     <Items />
     </>
   )
 }
