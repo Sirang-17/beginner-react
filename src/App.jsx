@@ -1,5 +1,6 @@
 import React from 'react'
 import Product from './components/Product';
+import Items from './components/Items';
 const App = () => {
   const iphoneData = {
     ram: "16GB",
@@ -8,8 +9,9 @@ const App = () => {
   };
   return (
     <>
-     <Product name = "IPhone" price = {100000} color={"Blue"} data = {iphoneData} />
-      <Product name = "Samsung" price = {80000} color={"Black"} data = {{ram: "8GB", rom: "128GB", chip: "Exynos 2100"}} />
+     {/* <Product name = "IPhone" price = {100000} color={"Blue"} data = {iphoneData} />
+     <Product name = "Samsung" price = {80000} color={"Black"} data = {{ram: "8GB", rom: "128GB", chip: "Exynos 2100"}} /> */}
+     <Items />
     </>
   )
 }

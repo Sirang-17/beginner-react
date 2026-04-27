@@ -7,9 +7,13 @@ const Product = ({name, price, color, data = {}}) => {
       <h1>Brand {name}</h1>
       <h2>Price {price}</h2>
       <h2>Color {color}</h2>
+      {data.chip &&(
+        <>
       <p>RAM {data.ram}</p>
       <p>ROM {data.rom}</p>
       <p>Chip {data.chip}</p>
+      </>
+      )}
     </div>
   )
 }
