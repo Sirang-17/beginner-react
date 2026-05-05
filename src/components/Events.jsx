@@ -1,4 +1,7 @@
+import React from 'react'
+import { useState } from 'react';
 const Events = () => {
+    const[count, setCount] = useState(0);
     const showAlert = () => {
         alert("Button Clicked!");
     };
@@ -10,14 +13,14 @@ const Events = () => {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
     };
-    let count = 0;
-    console.log("Initial count value: ", count);
 
     let counter = (value) => {
-        count = value;
-        alert(`Counter: ${count}`);
+        console.log("Count value before increment: ", count);
+        setCount(value);
+        alert(`Counter: ${value}`);
         console.log("Count value after increment: ", count);
     };
+    
   return (
       <>
           <h1>Events</h1>
@@ -26,7 +29,7 @@ const Events = () => {
           <div>
               <button onClick={bg_light}>Light Mode</button>
               <button onMouseOver={bg_dark}>Dark Mode</button>
-              <button onClick={() => counter(count + 1)}> Count Increment</button>
+              <button onClick={() => counter(count + 10)}> Count Increment</button>
           </div>
       </>
   )
