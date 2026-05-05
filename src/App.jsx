@@ -1,19 +1,22 @@
 import React from 'react'
-import Product from './components/Product';
+// import Product from './components/Product';
+import Events from './components/Events';
 const App = () => {
-  const iphoneData = {
-    ram: "16GB",
-    rom: "256GB",
-    chip: "A15 Bionic"
-  };
+  // const iphoneData = {
+  //   ram: "16GB",
+  //   rom: "256GB",
+  //   chip: "A15 Bionic"
+  // };
   return (
     <>
-     <Product />
+     {/* <Product />
      <Product name = "IPhone" price = {100000} color={"Blue"} data = {iphoneData} />
       <Product name = "Samsung" price = {80000} color={"Black"} data = {{ram: "8GB", rom: "128GB", chip: "Exynos 2100"}} 
       />
-      <Product name = "OnePlus" price = {50000} color={"Red"} />
+      <Product name = "OnePlus" price = {50000} color={"Red"} /> */}
+      <Events />
     </>
+    
   )
 }
 
